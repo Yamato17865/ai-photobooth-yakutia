@@ -31,7 +31,4 @@
 git clone https://github.com/Yamato17865/ai-photobooth-yakutia.git
 cd ai-photobooth-yakutia
 
-
-## 🚀 Быстрый старт
-
-### 1. Клонировать репозиторий
+#########1
