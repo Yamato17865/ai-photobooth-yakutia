@@ -26,7 +26,8 @@
 
 ## 🚀 Быстрый старт
 
-### 1. Клонировать репозиторий
+### Последовательности действий
+1. Клонировать репозиторий
 ```bash
 git clone https://github.com/Yamato17865/ai-photobooth-yakutia.git
 cd ai-photobooth-yakutia
