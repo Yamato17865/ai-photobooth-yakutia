@@ -21,3 +21,16 @@
 ```bash
 git clone https://github.com/Yamato17865/ai-photobooth-yakutia.git
 cd ai-photobooth-yakutia
+
+2. Установить зависимости
+bash
+pip install -r requirements.txt
+
+3. Настроить переменные окружения
+Создайте файл .env на основе .env.example:
+cp .env.example .env
+Добавьте ваш токен Replicate API.
+
+4. Запустить приложение
+python app.py
+Откройте http://localhost:5000
