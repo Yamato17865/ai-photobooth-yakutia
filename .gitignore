@@ -1,0 +1,35 @@
+# Секретные файлы
+.env
+
+# Виртуальное окружение
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Загруженные пользователями файлы
+static/uploads/*.jpg
+static/uploads/*.png
+static/uploads/*.jpeg
+!static/uploads/.gitkeep
+
+# Временные файлы
+*.log
+*.tmp
+*.swp
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# MacOS
+.DS_Store
