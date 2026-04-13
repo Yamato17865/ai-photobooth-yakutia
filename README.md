@@ -23,7 +23,7 @@ git clone https://github.com/Yamato17865/ai-photobooth-yakutia.git
 cd ai-photobooth-yakutia
 
 ### 2. Установить зависимости
-bash
+```bash
 pip install -r requirements.txt
 
 3. Настроить переменные окружения
