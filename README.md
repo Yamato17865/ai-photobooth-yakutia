@@ -2,18 +2,27 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)
 [![Flask](https://img.shields.io/badge/Flask-3.0-green)](https://flask.palletsprojects.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
+[![Replicate](https://img.shields.io/badge/AI-Replicate-purple)](https://replicate.com)
 
-Веб-приложение для генерации AI-портретов с подготовкой к профессиональной печати (10×15 см, до 1200 DPI).
+Веб-приложение для генерации AI-портретов с профессиональной подготовкой к печати (10×15 см, до 1200 DPI).
 
 ## ✨ Возможности
 
-- 📸 Захват фото с веб-камеры
+- 📸 Захват фото с веб-камеры (WebRTC)
 - 🎨 **50+ художественных стилей** (аниме, Дисней, киберпанк, якутские мотивы)
-- 🧠 Интеграция с AI-моделями: FLUX Kontext Pro и Google Nano-Banana
+- 🧠 Интеграция с AI-моделями: **FLUX Kontext Pro** и **Google Nano-Banana**
 - 🖨️ Автоматическая подготовка к печати: 10×15 см, 300/600/1200 DPI
-- 👤 Умное распознавание лица с подсказками по позиционированию
-- 💾 Скачивание и печать с брендированием
+- 👤 Умное распознавание лица (Face Detection API)
+- 💾 Скачивание в Full-HD и печать с брендированием
+
+## 🛠️ Стек технологий
+
+| Backend | Frontend | AI & Обработка |
+|:---|:---|:---|
+| Python 3 | HTML5/CSS3 | Replicate API |
+| Flask | JavaScript (ES6+) | FLUX Kontext Pro |
+| Pillow (PIL) | WebRTC | Nano-Banana |
+| Requests | Face Detection API | Pillow |
 
 ## 🚀 Быстрый старт
 
@@ -21,16 +30,35 @@
 ```bash
 git clone https://github.com/Yamato17865/ai-photobooth-yakutia.git
 cd ai-photobooth-yakutia
-
-### 2. Установить зависимости
-```bash
+2. Установить зависимости
+bash
 pip install -r requirements.txt
-
 3. Настроить переменные окружения
 Создайте файл .env на основе .env.example:
-cp .env.example .env
-Добавьте ваш токен Replicate API.
 
+bash
+cp .env.example .env
+Откройте .env в любом редакторе и добавьте ваш токен Replicate API:
+
+text
+REPLICATE_API_TOKEN=r8_ваш_токен_здесь
+SECRET_KEY=любой_секретный_ключ
 4. Запустить приложение
+bash
 python app.py
-Откройте http://localhost:5000
+Откройте браузер и перейдите по адресу: http://localhost:5000
+
+⚠️ Важно
+Для работы генерации изображений требуется платный аккаунт Replicate с привязанной банковской картой. Без токена приложение запустится, но генерация будет недоступна.
+
+👤 Автор
+Попов Феликс Георгиевич
+
+GitHub: @Yamato17865
+
+Должность: Педагог дополнительного образования, IT-Cube Якутия
+
+📄 Лицензия
+MIT License
+
+text
