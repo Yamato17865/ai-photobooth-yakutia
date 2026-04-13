@@ -30,35 +30,8 @@
 ```bash
 git clone https://github.com/Yamato17865/ai-photobooth-yakutia.git
 cd ai-photobooth-yakutia
-2. Установить зависимости
-bash
-pip install -r requirements.txt
-3. Настроить переменные окружения
-Создайте файл .env на основе .env.example:
 
-bash
-cp .env.example .env
-Откройте .env в любом редакторе и добавьте ваш токен Replicate API:
 
-text
-REPLICATE_API_TOKEN=r8_ваш_токен_здесь
-SECRET_KEY=любой_секретный_ключ
-4. Запустить приложение
-bash
-python app.py
-Откройте браузер и перейдите по адресу: http://localhost:5000
+## 🚀 Быстрый старт
 
-⚠️ Важно
-Для работы генерации изображений требуется платный аккаунт Replicate с привязанной банковской картой. Без токена приложение запустится, но генерация будет недоступна.
-
-👤 Автор
-Попов Феликс Георгиевич
-
-GitHub: @Yamato17865
-
-Должность: Педагог дополнительного образования, IT-Cube Якутия
-
-📄 Лицензия
-MIT License
-
-text
+### 1. Клонировать репозиторий
